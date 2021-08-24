@@ -106,7 +106,7 @@
     width: 90%;
   }
   
-  .todo-row:nth-child(4n + 1) {
+  .todo-row:nth-child(4n + 1) { /*every 4n+1 have the same colour*/
     background: linear-gradient(
       90deg,
       rgba(93, 12, 255, 1) 0%,
