@@ -24,8 +24,8 @@ function TodoForm(props) {
     return (
         <form className="todo-form" onSubmit={handleSubmit}> 
             {props.edit ?  // if props.edit is true
-            ( <> <input type ="text" placeholder="Add a To-Do Item" value ={input} name='text' className='todo-input-edit' onChange={handleChange} ref={inputRef}/>
-            <button className="todo-button-edit">Update</button> </>) // button that adds todos
+            ( <> <input type ="text" placeholder="Add a To-Do Item" value ={input} name='text' className='todo-input edit' onChange={handleChange} ref={inputRef}/>
+            <button className="todo-button edit">Update</button> </>) // button that adds todos
             :
              (<> <input type ="text" placeholder="Add a To-Do Item" value ={input} name='text' className='todo-input' onChange={handleChange} ref={inputRef}/>
             <button className="todo-button">Add Todo </button></>)  // button that updates todos
